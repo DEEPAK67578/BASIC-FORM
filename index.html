@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Quicksand&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <form method="get">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required />
+
+        <label for="message">Your message</label>
+        <textarea id="message"></textarea>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" required />
+
+        <label for="age">Your Age</label>
+        <input type="number" id="age" required />
+
+        <label for="password">Your password</label>
+        <input type="password" id="password" required />
+
+        <label for="date">Your Birthday</label>
+        <input type="date" id="date" />
+
+        <label for="color">Your Favorite Color</label>
+        <select id="color">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+        </select>
+
+        <h2>How we can verify your Account?</h2>
+        <div class="for-inline">
+          <input id="via-email" type="radio" name="contact" value="via Email" />
+          <label for="via-email">Via Email</label>
+        </div>
+        <div class="for-inline">
+          <input id="via-email" type="radio" name="contact" value="call" />
+          <label for="via-email">Via call</label>
+        </div>
+        <div class="for-inline">
+          <input
+            type="checkbox"
+            id="via-phone-call"
+            name="contact1"
+            value="via contact"
+          />
+          <label id="via-phone-call">Contact me via call</label>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
